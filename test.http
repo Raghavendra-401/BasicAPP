@@ -1,0 +1,24 @@
+### GET 
+GET http://localhost:4004/odata/v4/catalog/Books
+
+
+### POST
+POST http://localhost:4004/odata/v4/catalog/Books
+Content-Type: application/json
+
+{
+    "ID": 4,
+    "stock": 100,
+    "title": "Wuthering Heights"
+}
+
+
+### PUT
+PUT http://localhost:4004/odata/v4/catalog/Books/4
+Content-Type: application/json
+
+{
+    "ID": 4,
+    "stock": 150,
+    "title": "Wuthering Heights"
+}
